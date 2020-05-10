@@ -1,0 +1,10 @@
+absl-py
+attr
+dm-tree
+numpy
+Pillow
+tensorboard
+tensorflow
+tensorflow-federated
+tensorflow-gan
+tensorflow-privacy
