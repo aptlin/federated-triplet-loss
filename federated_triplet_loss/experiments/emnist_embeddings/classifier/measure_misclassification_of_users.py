@@ -46,13 +46,14 @@ Then execute it:
 
 import math
 
-from absl import app
-from absl import flags
 import numpy as np
 import tensorflow as tf
+from absl import app, flags
 
-from experiments.emnist import emnist_data_utils
-from experiments.emnist.classifier import emnist_classifier_model as ecm
+from federated_triplet_loss.experiments.emnist_embeddings import emnist_data_utils
+from federated_triplet_loss.experiments.emnist_embeddings.classifier import (
+    emnist_classifier_model as ecm,
+)
 
 flags.DEFINE_float(
     "invert_imagery_likelihood",

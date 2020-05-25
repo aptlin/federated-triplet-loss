@@ -34,16 +34,26 @@ from absl import app, flags, logging
 from PIL import Image
 from tensorboard.plugins.hparams import api as hp
 
-import gan_losses
-import gan_training_tf_fns
-import tff_gans
-import training_loops
-from experiments.emnist import emnist_data_utils
-from experiments.emnist.classifier import emnist_classifier_model as ecm
-from experiments.emnist.eval import emnist_eval_util as eeu
-from experiments.emnist.models import convolutional_gan_networks as networks
-from experiments.emnist.preprocessing import filtered_emnist_data_utils as fedu
-from utils import utils_impl
+from federated_triplet_loss import (
+    gan_losses,
+    gan_training_tf_fns,
+    tff_gans,
+    training_loops,
+)
+from federated_triplet_loss.experiments.emnist_embeddings import emnist_data_utils
+from federated_triplet_loss.experiments.emnist_embeddings.classifier import (
+    emnist_classifier_model as ecm,
+)
+from federated_triplet_loss.experiments.emnist_embeddings.eval import (
+    emnist_eval_util as eeu,
+)
+from federated_triplet_loss.experiments.emnist_embeddings.models import (
+    convolutional_gan_networks as networks,
+)
+from federated_triplet_loss.experiments.emnist_embeddings.preprocessing import (
+    filtered_emnist_data_utils as fedu,
+)
+from federated_triplet_loss.utils import utils_impl
 
 with utils_impl.record_new_flags() as hparam_flags:
     # Metadata.

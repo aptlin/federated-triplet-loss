@@ -30,11 +30,10 @@ import subprocess
 import tempfile
 from typing import Dict, Iterable, Iterator, List, Mapping, Optional, Sequence, Union
 
-from absl import flags
-from absl import logging
 import numpy as np
 import pandas as pd
 import tensorflow as tf
+from absl import flags, logging
 
 
 def iter_grid(
@@ -594,4 +593,3 @@ def launch_experiment(
         pool.apply_async(executor, (command,))
     pool.close()
     pool.join()
-

@@ -1,5 +1,5 @@
 # Copyright (c) 2020 Sasha Illarionov
-# 
+#
 # This software is released under the MIT License.
 # https://opensource.org/licenses/MIT
 
@@ -21,10 +21,13 @@
 import numpy as np
 import tensorflow as tf
 
-from experiments.emnist import emnist_data_utils
-from experiments.emnist.classifier import emnist_classifier_model as ecm
-
-from experiments.emnist.eval import emnist_eval_util as eeu
+from federated_triplet_loss.experiments.emnist_embeddings import emnist_data_utils
+from federated_triplet_loss.experiments.emnist_embeddings.classifier import (
+    emnist_classifier_model as ecm,
+)
+from federated_triplet_loss.experiments.emnist_embeddings.eval import (
+    emnist_eval_util as eeu,
+)
 
 
 class EmnistEvalUtilTest(tf.test.TestCase):

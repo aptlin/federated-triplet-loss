@@ -25,7 +25,7 @@ import os.path
 import tensorflow as tf
 import tensorflow_federated as tff
 
-import experiments.emnist.emnist_data_utils
+import federated_triplet_loss.experiments.emnist_embeddings.emnist_data_utils
 
 BASE_URL = "https://storage.googleapis.com/tff-experiments-public/"
 CSVS_BASE_PATH = "gans/csvs/"

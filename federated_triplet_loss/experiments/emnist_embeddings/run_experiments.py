@@ -18,10 +18,9 @@
 # limitations under the License.
 """Script to replicate experiments in https://arxiv.org/abs/1911.06679."""
 
-from absl import app
-from absl import flags
+from absl import app, flags
 
-from utils import utils_impl
+from federated_triplet_loss.utils import utils_impl
 
 FLAGS = flags.FLAGS
 

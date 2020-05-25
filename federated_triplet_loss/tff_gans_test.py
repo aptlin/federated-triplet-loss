@@ -17,15 +17,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from absl.testing import parameterized
 import tensorflow as tf
 import tensorflow_federated as tff
 import tensorflow_privacy
+from absl.testing import parameterized
 
-import gan_losses
-import gan_training_tf_fns
-import one_dim_gan
-import tff_gans
+from federated_triplet_loss import (
+    gan_losses,
+    gan_training_tf_fns,
+    one_dim_gan,
+    tff_gans,
+)
 
 # These 'before' and 'after' values bear no significance, they meerly correspond
 # to the clip and std dev values before and after two rounds of training when

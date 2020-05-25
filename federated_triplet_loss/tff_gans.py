@@ -22,9 +22,9 @@ import attr
 import tensorflow as tf
 import tensorflow_federated as tff
 import tensorflow_privacy
-
 from tensorflow_federated.python.common_libs import py_typecheck
-import gan_training_tf_fns
+
+from federated_triplet_loss import gan_training_tf_fns
 
 
 def tensor_spec_for_batch(dummy_batch):

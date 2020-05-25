@@ -29,12 +29,14 @@ Then execute it:
   ./path/to/binary/train_emnist_classifier_model --epochs=3
 """
 
-from absl import app
-from absl import flags
 import tensorflow as tf
+import tensorflow_addons as tfa
+from absl import app, flags
 
-from experiments.emnist import emnist_data_utils
-from experiments.emnist.classifier import emnist_classifier_model
+from federated_triplet_loss.experiments.emnist_embeddings import emnist_data_utils
+from federated_triplet_loss.experiments.emnist_embeddings.classifier import (
+    emnist_classifier_model,
+)
 
 Model = tf.keras.Model
 

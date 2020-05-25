@@ -19,9 +19,7 @@
 
 import tensorflow as tf
 
-import gan_losses
-import gan_training_tf_fns
-import one_dim_gan
+from federated_triplet_loss import gan_losses, gan_training_tf_fns, one_dim_gan
 
 GAN_LOSS_FNS = gan_losses.get_gan_loss_fns("wasserstein")
 INIT_DP_AVERAGING_STATE = ["foo"]

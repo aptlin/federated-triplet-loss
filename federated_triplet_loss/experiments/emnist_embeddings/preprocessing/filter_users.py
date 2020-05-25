@@ -1,5 +1,5 @@
 # Copyright (c) 2020 Sasha Illarionov
-# 
+#
 # This software is released under the MIT License.
 # https://opensource.org/licenses/MIT
 
@@ -41,14 +41,15 @@ Then execute it:
 import collections
 import csv
 
-from absl import app
-from absl import flags
 import numpy as np
 import tensorflow as tf
+from absl import app, flags
 
-from experiments.emnist import emnist_data_utils
-from experiments.emnist.classifier import emnist_classifier_model as ecm
-from utils import utils_impl
+from federated_triplet_loss.experiments.emnist_embeddings import emnist_data_utils
+from federated_triplet_loss.experiments.emnist_embeddings.classifier import (
+    emnist_classifier_model as ecm,
+)
+from federated_triplet_loss.utils import utils_impl
 
 with utils_impl.record_new_flags() as hparam_flags:
     flags.DEFINE_float(

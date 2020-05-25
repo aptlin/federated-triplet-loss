@@ -21,13 +21,12 @@
 import os.path
 import time
 
-from absl import logging
 import attr
 import tensorflow as tf
+from absl import logging
 
-import gan_training_tf_fns
-import tff_gans
-from utils import checkpoint_utils
+from federated_triplet_loss import gan_training_tf_fns, tff_gans
+from federated_triplet_loss.utils import checkpoint_utils
 
 CHECKPOINT_PREFIX = "ckpt_"
 

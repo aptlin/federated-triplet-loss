@@ -19,15 +19,17 @@
 
 import os
 
-from absl.testing import parameterized
 import tensorflow as tf
 import tensorflow_privacy
+from absl.testing import parameterized
 
-import gan_losses
-import gan_training_tf_fns
-import one_dim_gan
-import tff_gans
-import training_loops
+from federated_triplet_loss import (
+    gan_losses,
+    gan_training_tf_fns,
+    one_dim_gan,
+    tff_gans,
+    training_loops,
+)
 
 
 def _get_train_generator_and_discriminator_fns():

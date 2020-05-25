@@ -23,7 +23,7 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_federated as tff
 
-import experiments.emnist.emnist_data_utils
+from federated_triplet_loss.experiments.emnist_embeddings import emnist_data_utils
 
 BATCH_SIZE = 7
 

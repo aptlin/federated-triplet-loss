@@ -26,9 +26,9 @@ away when b/130724878 is fixed.
 
 import attr
 import tensorflow as tf
-
-import gan_losses
 from tensorflow_federated.python.tensorflow_libs import tensor_utils
+
+from federated_triplet_loss import gan_losses
 
 
 def assert_no_anon_tuples(x):

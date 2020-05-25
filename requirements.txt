@@ -2,9 +2,11 @@ absl-py
 attr
 dm-tree
 numpy
+pandas
 Pillow
 tensorboard
 tensorflow
 tensorflow-federated
 tensorflow-gan
 tensorflow-privacy
+tensorflow-addons
