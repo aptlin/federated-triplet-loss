@@ -13,7 +13,7 @@ Paper: _Augenstein, Sean, H. Brendan McMahan, Daniel Ramage, Swaroop Ramaswamy, 
 
 #### Examples of successful convergence after 1000 rounds
 
-- `dp_l2_norm_cl ip`: **0.1**, `dp_noise_multiplier`: **0.01**
+- `dp_l2_norm_clip`: **0.1**, `dp_noise_multiplier`: **0.01**
 
   - **Sample**:
 
